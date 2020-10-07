@@ -47,7 +47,6 @@ app.get('/productos/buscar/:termino', verificaToken, (req, res) => {
 
             if (err) {
                 return res.status(500).json({
-                    ok: false,
                     err
                 });
             }
